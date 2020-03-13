@@ -2,15 +2,15 @@ body {
   margin: 0;
 }
 
-/* ----- Header Start ----- */
-#header {
-  background-color: black;
-}
-
 /* Globalno za svaki <a> element na stranici */
 a {
   color: #43A047;
   text-decoration: none;
+}
+
+/* ----- Header Start ----- */
+#header {
+  background-color: black;
 }
 
 #header .header_content_wrapper {
