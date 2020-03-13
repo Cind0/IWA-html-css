@@ -3,26 +3,65 @@
   <head>
     <!-- Encoding > za: čćžđš -->
     <meta charset="UTF-8">
+    <title>IWA-Html-Css</title>
     <!-- HTML5 meta tag > za mobitel >  https://www.w3schools.com/tags/tag_meta.asp -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="autor" content="YourName" />
     <meta name="description" content="IWA html-css">
 
-    <!--  -->
+    <!-- Import external .css file > hr: ? externu .css datoteku -->
     <link href="style.css"  type="text/css" rel="stylesheet"/>
   </head>
   <body>
     <header>
-      <span><a></a></span>
-      <span><a></a></span>
+     <!-- O <nav> elementu > https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav -->
+      <nav>
+        <span><a href="index.html">Početna</a></span>
+        <span><a href="">Registracija</a></span>
+      </nav>
     </header>
    <!-- O <main> elementu > https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main -->
-    <main>
-      <section id="section_1"></section>
-      <section id="section_2"></section>
-      <section id="section_3"></section>
+    <main id="content_container">
+      <section id="section_1">
+        <div class="image_wrapper">
+          <img src="./img/WillFerrell.jpg" alt="Will Ferrell" width="150"/>
+        </div>
+        <div>
+          <p>
+            John William Ferrell was born in Irvine, California, 
+            to Betty Kay (Overman), a teacher, and Roy Lee Ferrell, Jr., 
+            a musician. His parents were originally from Roanoke Rapids, North Carolina.
+          </p>
+        </div>
+      </section>
+      <section id="section_2">
+        <div>
+          <!-- UnOrderd list -->
+          <ul>
+            <li>Born: <strong>July 16, 1967</strong> in <strong>Irvine, California, USA</strong></li>
+            <li>Birth Name: <strong>John William Ferrell</strong></li>
+            <li>Nickname: <strong>Wilf</strong></li>
+            <li>Height: <strong>1.91 m</strong> (6' 3")</li>
+          </ul>
+        </div>
+        <div>
+          <!-- Orderd list -->
+          <ol>
+            <li>2003 > <a href="https://www.imdb.com/title/tt0302886/?ref_=fn_al_tt_1">Old School</a></li>
+            <li>2003 > <a href="https://www.imdb.com/title/tt0319343/?ref_=nv_sr_srsg_0">Elf</a></li>
+            <li>2004 > <a href="https://www.imdb.com/title/tt0357413/">Anchorman: The Legend Of Ron Burgundy</a></li>
+            <li>2006 > <a href="https://www.imdb.com/title/tt0415306/?ref_=nv_sr_srsg_0">Talladega Nights: The Ballad Of Ricky Bobby</a></li>
+            <li>2008 > <a href="https://www.imdb.com/title/tt0838283/?ref_=fn_al_tt_1">Step Brothers</a></li>
+          </ol>
+        </div>
+      </section>
+      <section id="section_3">
+
+      </section>
+      <footer>
+        <div></div>
+      </footer>
     </main>
-    <footer></footer>
   </body>
 </html>
