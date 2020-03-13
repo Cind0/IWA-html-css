@@ -1,7 +1,114 @@
 body {
+  margin: 0;
+}
 
-};
+/* ----- Header Start ----- */
+#header {
+  background-color: black;
+}
 
-.content_container {
+/* Globalno za svaki <a> element na stranici */
+a {
+  color: #43A047;
+  text-decoration: none;
+}
 
-};
+#header .header_content_wrapper {
+  /* 
+    CSS3 - flexBox 
+    Ovaj dio sigurno nečemo raditi, a relatino je jednostavan za koristiti i podržan je u gotovo svim browser-ima!
+    Ako želite više naučiti > https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  /* Visina header-a */
+  height: 50px;
+
+  /* 
+    *** Na ovaj način možete centrirati sadržaj na sredinu stranice ***
+    max-width > maximalna širina koju element može imati
+    margin: 0 auto; > gornja i donja margina su 0, a lijeva i desna margina automatski se prilagode tako da s obije strane su jednake
+  */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#header .header_content_wrapper .header_name {
+  font-size: 20px;
+  font-weight: 700;
+  
+  /* Ravna linija sa desne strane imena */
+  padding-right: 10px;
+  border-right: 2px solid #fff;
+}
+#header .header_content_wrapper .header_name a {
+  color: #fff;
+}
+
+#header .header_content_wrapper .header_navigation a {
+  margin-left: 40px;
+}
+/* ----- Header End ----- */
+
+
+/* ----- Main Start ----- */
+#content_container {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/* zajedničko sekciji 1 i 2 */
+#section_1,
+#section_2 {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+  /* section 1 - Start */
+  #section_1 {
+    flex-direction: column;
+  }
+  #section_1 .sectoin_1_content_wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  #section_1 .sectoin_1_content_wrapper .text_wrapper {
+    padding-left: 20px;
+  }
+  /* section 1 - End */
+
+
+  /* section 1 - Start */
+  #section_2 {
+    flex-direction: row;
+  }
+
+  #section_2 .osobni_podatci, 
+  #section_2 .filmovi {
+    flex-grow: 1;
+  }
+  /* section 1 - End */
+
+/* ----- Main End ----- */
+
+
+/* ----- Footer Start ----- */
+#footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  background-color: black;
+
+  margin-top: 100px;
+  padding: 15px;
+}
+#footer p {
+  color: #fff;
+}
+/* ----- Footer End ----- */

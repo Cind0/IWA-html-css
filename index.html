@@ -1,42 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="hr">
   <head>
     <!-- Encoding > za: čćžđš -->
     <meta charset="UTF-8" />
-    <title>IWA-Html-Css</title>
+    <title>Početna - IWA-Html-Css</title>
     <!-- HTML5 meta tag > za mobitel >  https://www.w3schools.com/tags/tag_meta.asp -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta name="autor" content="YourName" />
     <meta name="description" content="IWA html-css" />
 
-    <!-- Import external .css file > hr: ? externu .css datoteku -->
+    <!-- 
+      Import external .css file > hr: ? externu .css datoteku 
+      *** Obrišite ili zakomentirajte liniju ispod, da dobijete samo html (to je što smo do sada radili) ***
+    -->
     <link href="style.css"  type="text/css" rel="stylesheet"/>
   </head>
   <body>
-    <header>
-     <!-- O <nav> elementu > https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav -->
-      <nav>
-        <span><a href="index.html">Početna</a></span>
-        <span><a href="">Registracija</a></span>
-      </nav>
+    <header id="header">
+      <div class="header_content_wrapper">
+        <!-- 
+          Inače ide neki LOGO ovdje, pa se klasa može zvati npr. header_logo 
+          target="_blank" > Otvara link u novom tabu
+        -->
+        <div class="header_name"><a href="https://www.imdb.com/name/nm0002071/?ref_=nmbio_bio_nm" target="_blank">Will Ferrell</a></div>
+        <!-- O <nav> elementu > https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav -->
+        <nav class="header_navigation">
+          <a href="index.html">Početna</a>
+          <a href="registracija.html">Registracija</a>
+        </nav>
+      </div>
     </header>
    <!-- O <main> elementu > https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main -->
     <main id="content_container">
       <section id="section_1">
-        <div class="image_wrapper">
-          <img src="./img/WillFerrell.jpg" alt="Will Ferrell" width="150"/>
-        </div>
-        <div>
-          <p>
-            John William Ferrell was born in Irvine, California, 
-            to Betty Kay (Overman), a teacher, and Roy Lee Ferrell, Jr., 
-            a musician. His parents were originally from Roanoke Rapids, North Carolina.
-          </p>
+        <h1>About John William Ferrell</h1>
+        <div class="sectoin_1_content_wrapper">
+          <div class="image_wrapper">
+            <!-- Kao što možete neki tekst pretvoriti u LINK na neku drugu stranicu, isto tako možete sliku pretvoriti u link -->
+            <a href="https://www.imdb.com/name/nm0002071/?ref_=nmbio_bio_nm" target="_blank">
+              <img src="./img/WillFerrell.jpg" alt="Will Ferrell" width="150"/>
+            </a>
+          </div>
+          <div class="text_wrapper">
+            <p>
+              John William Ferrell was born in Irvine, California, 
+              to Betty Kay (Overman), a teacher, and Roy Lee Ferrell, Jr., 
+              a musician. His parents were originally from Roanoke Rapids, North Carolina.
+              A graduate of the University of Southern California, Ferrell became interested in performing while a student at University High School in Irvine, 
+              where he made his school's daily morning announcements over the public address system in disguised voices. 
+              He started as a member of the Los Angeles comedy/improvisation group The Groundlings, where fellow cast members Ana Gasteyer, 
+              Maya Rudolph and former Saturday Night Live (1975) repertory players such as Laraine Newman, Jon Lovitz and Phil Hartman began their careers. 
+              It was there he met Chris Kattan and the two became good friends and both went on to Saturday Night Live (1975) later. 
+              He has also appeared on several television programs, including Strangers with Candy (1999), 
+              Grace Under Fire (1993) and Living Single (1993) during his time at The Groundlings. 
+              Will also lent his voice to the armless and legless dad of cartoon family "The Oblongs".
+            </p>
+          </div>
         </div>
       </section>
       <section id="section_2">
-        <div>
+        <div class="osobni_podatci">
+          <h2>Info</h2>
           <!-- UnOrderd list -->
           <ul>
             <li>Born: <strong>July 16, 1967</strong> in <strong>Irvine, California, USA</strong></li>
@@ -45,7 +70,8 @@
             <li>Height: <strong>1.91 m</strong> (6' 3")</li>
           </ul>
         </div>
-        <div>
+        <div class="filmovi">
+          <h2>Films</h2>
           <!-- Orderd list -->
           <ol>
             <li>2003 > <a href="https://www.imdb.com/title/tt0302886/?ref_=fn_al_tt_1">Old School</a></li>
@@ -56,11 +82,8 @@
           </ol>
         </div>
       </section>
-      <section id="section_3">
-
-      </section>
-      <footer>
-        <div></div>
+      <footer id="footer">
+        <p>Tvoje Ime > Email: <a href="mailto:iprezime@foi.hr">iprezime@foi.hr</a></p>
       </footer>
     </main>
   </body>
