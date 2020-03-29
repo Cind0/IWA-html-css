@@ -1,5 +1,5 @@
 # IWA-html-css
-Zadatak 2 - html-css
+Zadatak > html-css
 
 VJEŽBA
   CSS 3 - flex grid
