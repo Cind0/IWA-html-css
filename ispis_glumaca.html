@@ -23,7 +23,7 @@
           Inače ide neki LOGO ovdje, pa se klasa može zvati npr. header_logo 
           target="_blank" > Otvara link u novom tabu
         -->
-        <div class="header_name"><a href="https://www.imdb.com/name/nm0002071/?ref_=nmbio_bio_nm" target="_blank">Will Ferrell</a></div>
+        <!-- <div class="header_name"><a href="https://www.imdb.com/name/nm0002071/?ref_=nmbio_bio_nm" target="_blank">Will Ferrell</a></div> -->
         <!-- O <nav> elementu > https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav -->
         <nav class="header_navigation">
           <a href="index.html">Početna</a>
@@ -33,12 +33,54 @@
       </div>
     </header>
     <main id="content_container">
-      Tablica glumaca!
-      <footer id="footer">
-        <div class="footer_container">
-          <div class="footer_text">Tvoje Ime > Email: <a href="mailto:iprezime@foi.hr">iprezime@foi.hr</a></div>
-        </div>
-      </footer>
+      <h2>Ispis Glumaca:</h2>
+      <table id="glumci">
+        <tr>
+          <th>Ime</th>
+          <th>Prezime</th>
+          <th>Spol</th>
+          <th>Datum rođenja</th>
+          <th>Mjesto rođenja</th>
+          <th>Država rođenja</th>
+        </tr>
+        <tr>
+          <td>Jim</td>
+          <td>Carrey</td>
+          <td>M</td>
+          <td>17.1.1962</td>
+          <td>Ontario</td>
+          <td>Kanada</td>
+        </tr>
+        <tr>
+          <td>Morgan</td>
+          <td>Freeman</td>
+          <td>M</td>
+          <td>1.6.1937</td>
+          <td>Memphis, Tennessee</td>
+          <td>USA</td>
+        </tr>
+        <tr>
+          <td>Robin</td>
+          <td>Williams</td>
+          <td>M</td>
+          <td>21.7.1951</td>
+          <td>Chicago, Illinois</td>
+          <td>USA</td>
+        </tr>
+        <tr>
+          <td>Tom</td>
+          <td>Selleck</td>
+          <td>M</td>
+          <td>29.1.1945</td>
+          <td>Detroit, Michigan</td>
+          <td>USA</td>
+        </tr>
+      </table>
     </main>
+    <footer id="footer">
+      <div class="footer_container">
+        <div class="footer_text">Tvoje Ime > Email: <a href="mailto:iprezime@foi.hr">iprezime@foi.hr</a></div>
+      </div>
+    </footer>
   </body>
 </html>
